@@ -1,0 +1,77 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Righteous', sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  list-style-image: unset;
+}
+
+/* Basic table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+/* Table header styling */
+table thead th {
+  padding: 0.5em;
+  border-bottom: 2px solid #dfe2e5;
+  text-align: left;
+  font-weight: bold;
+  background-color: #f6f8fa;
+}
+
+/* Table body row styling */
+table tbody tr {
+  border-top: 1px solid #dfe2e5;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f6f8fa;
+}
+
+/* Table cell styling */
+table td {
+  padding: 0.5em;
+  border-bottom: 1px solid #dfe2e5;
+  vertical-align: top;
+}
+
+/* Optional: Centered text in header */
+table th {
+  text-align: left;
+}
+
+/* Optional: Centered text in cells */
+table td {
+  text-align: left;
+}
+
+/* Optional: Right-aligned text in cells */
+table td.right-align {
+  text-align: right;
+}
+
+/* Optional: Center-aligned text in cells */
+table td.center-align {
+  text-align: center;
+}
+
+/* Optional: Specific column styling */
+table colgroup col:nth-child(1) {
+  width: 30%;
+}
+
+table colgroup col:nth-child(2) {
+  width: 40%;
+}
+
+table colgroup col:nth-child(3) {
+  width: 30%;
+}

@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	// import '@joyautomation/salt/styles.scss';
+	import '$lib/css/main.scss';
+	import '@fontsource/space-grotesk';
+	import '@fontsource/righteous';
+	import Schedule from './schedule.md';
+</script>
+
+<Schedule />
