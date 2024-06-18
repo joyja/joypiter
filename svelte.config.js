@@ -1,12 +1,16 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import simplePlantUML from "@akebifiky/remark-simple-plantuml";
+
+const simplePlantUMLOptions = { baseUrl: "https://www.plantuml.com/plantuml/svg" }
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: [vitePreprocess(), mdsvex({
+		remarkPlugins: [[simplePlantUML, simplePlantUMLOptions]],
 		extensions: ['.md', '.svx'],
 	})],
 

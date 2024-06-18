@@ -17,7 +17,10 @@ export default [
 				...globals.browser,
 				...globals.node
 			}
-		}
+		},
+		rules: {
+      'no-unused-vars': 'warn',
+    },
 	},
 	{
 		files: ['**/*.svelte'],
@@ -25,7 +28,10 @@ export default [
 			parserOptions: {
 				parser: ts.parser
 			}
-		}
+		},
+		rules: {
+      'no-unused-vars': 'warn',
+    },
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
